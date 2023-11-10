@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/tris0n/.backgrounds/yor-forger-4k.jpg' 

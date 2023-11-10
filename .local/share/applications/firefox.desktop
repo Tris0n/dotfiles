@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=sh -c "/opt/firefox/firefox %u"
+Icon=/opt/firefox/browser/chrome/icons/default/default32.png
+Terminal=false
+
+Name=Firefox
+GenericName=Browser
+Comment=Firefox Browser
+X-Desktop-File-Install-Version=0.27
