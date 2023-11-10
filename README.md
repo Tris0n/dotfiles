@@ -5,5 +5,4 @@
 - [x] Rofi
 - [x] i3-gaps
 
-# Preview
-![Preview](preview.png)
+# Preview![preview](https://github.com/Tris0n/dotfiles/assets/93105314/fae2bf6d-2598-4e75-9ead-8e5c4a4e33a7)
