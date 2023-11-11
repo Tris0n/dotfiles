@@ -18,6 +18,9 @@ font pango:monospace 8
 # Start picom
 exec_always --no-startup-id picom -b
 
+# Start fehbg
+exec_always ~/.fehbg
+
 # Start polybar
 exec_always ~/.config/polybar/launch.sh
 
