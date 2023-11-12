@@ -1,0 +1,37 @@
+==== FIX PICOM 60FPS ====
+Install xorg and nvidia-drivers to picom accept +60fps
+
+==== FIX MICROPHONE BUGS ====
+Fix microphone feedback:
+    - Open term and run "alsamixer"
+    - Make sure you have the right sound card selected F6
+    - With F5 show all options
+    - Find Loopback column and disable it.
+    - Run "aplay -l" to list playback devices
+    - Run "amixer -c <device-id>" to list mixers
+    - Run "/usr/bin/amixer -c <device-id> sset <mixer> mute"
+Install pipewire and pavucontrol to balance audio
+WARNING: Install pipewire-pulse, and remove pulseaudio. pipewire-pulse is better
+
+==== FIX LOGOUT CRASH ====
+Install xorg and nvidia-drivers
+
+==== CONFIG MOUSE SENSITIVITY ====
+xinput --list
+xinput --set-prop <mouse-id> "libinput Accel Speed" <sensitivity>
+My config: xinput --set-prop <mouse-id> "libinput Accel Speed" -0.4
+
+==== TRICK FOR PESIST SETTINGS ====
+Create script.sh on ~/.config and added exec_always on i3/config
+Example:
+
+```
+#!/bin/bash
+
+~/.config/polybar/launch.sh
+~/.fehbg
+xinput --set-prop 15 "libinput Accel Speed" -0.4
+
+sleep 1
+/usr/bin/amixer -c2 sset 'Headset',0 mute
+```
