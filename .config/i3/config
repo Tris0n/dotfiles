@@ -18,11 +18,14 @@ font pango:monospace 8
 # Start picom
 exec_always --no-startup-id picom -b
 
+# Start polybar
+exec_always ~/.config/polybar/launch.sh
+
 # Start fehbg
 exec_always ~/.fehbg
 
-# Start polybar
-exec_always ~/.config/polybar/launch.sh
+# Start autoload conf
+exec_always ~/.config/autoload.sh
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -157,6 +160,13 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# Configuration to resize windows with $mod+Control+Shift+Arrows
+bindsym $mod+Control+Shift+Left resize shrink width 10 px or 10 ppt
+bindsym $mod+Control+Shift+Right resize grow width 10 px or 10 ppt
+bindsym $mod+Control+Shift+Down resize shrink height 10 px or 10 ppt
+bindsym $mod+Control+Shift+Up resize grow height 10 px or 10 ppt
+
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
