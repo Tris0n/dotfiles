@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh-config.sh
 
 
 ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=blue,underline
