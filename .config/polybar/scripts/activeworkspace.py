@@ -6,12 +6,7 @@ def get_workspaces_with_windows(i3):
     
     for con in i3.get_tree().descendants():
         if con.window and con.workspace():
-            if con.workspace().name == "2":
-                workspaces_with_windows.add("12")
-            elif con.workspace().name == "12":
-                workspaces_with_windows.add("2")
-            else:
-                workspaces_with_windows.add(con.workspace().name)
+            workspaces_with_windows.add(con.workspace().name)
 
     return workspaces_with_windows
 
