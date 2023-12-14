@@ -22,7 +22,6 @@ def main(i3):
     focused = i3.get_tree().find_focused().workspace().num
     
     range_n = (0, 0)
-
     if int(sys.argv[1]) == 1:
         range_n = (1,11)
     elif int(sys.argv[1]) == 2:
@@ -37,7 +36,7 @@ def main(i3):
     out = ""
     
     for i in range(*range_n):
-        elif i == focused:
+        if i == focused:
             out += active
         elif str(i) in workspaces_with_windows:
             out += background
