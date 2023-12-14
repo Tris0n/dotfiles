@@ -37,12 +37,7 @@ def main(i3):
     out = ""
     
     for i in range(*range_n):
-        if i == 2 and focused == 12:
-            out += active
-        elif i == 12 and focused == 2:
-            out += active
-
-        elif i == focused and focused != 12 and focused != 2:
+        elif i == focused:
             out += active
         elif str(i) in workspaces_with_windows:
             out += background
