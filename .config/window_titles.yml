@@ -31,6 +31,12 @@ mappings:
 - class: install4j-burp-StartBurp
   title: Burp
   icon: 
+- class: chromium
+  title: Chromium
+  icon: 
+- class: discord
+  title: Discord
+  icon: 󰙯
 
 # you can customize the separators for the
 # 'show_native_title' titles. the conf below would show:
@@ -38,3 +44,4 @@ mappings:
 native_title_separators:
   start: "("
   end: ")"
+
