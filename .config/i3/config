@@ -162,10 +162,10 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Configuration to resize windows with $mod+Control+Shift+Arrows
-bindsym $mod+Control+Shift+Left resize shrink width 10 px or 10 ppt
-bindsym $mod+Control+Shift+Right resize grow width 10 px or 10 ppt
-bindsym $mod+Control+Shift+Down resize shrink height 10 px or 10 ppt
-bindsym $mod+Control+Shift+Up resize grow height 10 px or 10 ppt
+bindsym $mod+Control+Shift+Right resize shrink width 10 px or 10 ppt
+bindsym $mod+Control+Shift+Left resize grow width 10 px or 10 ppt
+bindsym $mod+Control+Shift+Up resize shrink height 10 px or 10 ppt
+bindsym $mod+Control+Shift+Down resize grow height 10 px or 10 ppt
 
 
 # reload the configuration file
