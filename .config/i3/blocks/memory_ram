@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mem_info=$(free -h)
+
+mem_used=$(echo "$mem_info" | awk '/^Mem:/ {print $3}')
+
+echo $mem_used

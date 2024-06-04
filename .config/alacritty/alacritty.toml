@@ -1,0 +1,22 @@
+[font]
+normal = { family = "FiraCodeNerdFont", style = "Regular" }
+bold = { style = "Bold" }
+italic = { style = "Italic" }
+bold_italic = { style = "Bold Italic" }
+size = 12
+
+[colors.primary]
+background = "#0c0c12"
+
+[window]
+opacity = 0.89
+
+[window.padding]
+x = 15
+y = 15
+
+[shell]
+program = "/usr/bin/zsh"
+
+[env]
+TERM = "xterm-256color"

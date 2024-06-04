@@ -1,0 +1,7 @@
+#!/bin/bash
+
+IP=$(ifconfig | grep -A1 "tun0" | grep inet | awk '{print $2}');
+
+if [ -n "$IP" ]; then    
+    echo $IP;
+fi
