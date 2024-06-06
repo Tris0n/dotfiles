@@ -8,9 +8,8 @@ cp .fehbg $HOME/
 
 sudo pacman -Syu
 
-sudo pacman -S pavucontrol \
-	alacritty rofi picom feh \
-	zsh git \
+sudo pacman -S alacritty rofi picom feh \
+	zsh git wget curl \
 	firefox \
 	pavucontrol \
 	xorg-xrandr \
@@ -31,5 +30,5 @@ cd yay && makepkg -si && cd ..
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-yay -S visual-stuio-code-bin
+yay -S visual-studio-code-bin
 
